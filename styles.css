@@ -58,7 +58,20 @@ a {
     border-radius: 50%;
 }
 
+.doodle-container {
+    display: flex;
+    justify-content: center;
+}
 
+#doodle {
+    background-color: rgb(31, 31, 31);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 448px;
+    height: 192px;
+}
 
 
 
