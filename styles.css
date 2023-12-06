@@ -6,6 +6,7 @@ body {
     background-color: rgb(53, 54, 58);
     margin: 0;
     padding: 0;
+    color: white;
 }
 
 .nav {
@@ -75,6 +76,10 @@ a {
     height: 192px;
 }
 
+.search-bar-container {
+    margin-bottom: 20px;
+}
+
 .search-bar {
     margin: auto;
     padding: 12px 20px;
@@ -88,14 +93,13 @@ a {
 }
 
 .search-bar > img {
-    /* display: block; */
     max-width: 100%;
     max-height: 100%;
 }
 
 .search-input {
     flex-grow: 1;
-    color: #9aa0a6;
+    color: black;
     border: none;
     appearance: none;
     font-size: 16px;
@@ -106,3 +110,59 @@ a {
     color: transparent;
   }
 
+.add-shortcut-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.tile {
+    width: 112px;
+    height: 112px;
+    padding-top: 16px;
+    font-size: 13px;
+}
+
+.add-button {
+    background-color: #202124;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-button > img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.add-shortcut-label {
+    margin-top: 8px;
+    padding: 8px;
+    text-align: center;
+}
+
+.drive-modal {
+    background-color: rgb(32, 33, 36);
+    width: 560px;
+    height: 220px;
+    margin: auto;
+    padding: 10px;
+}
+
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-title {
+    margin-right: auto;
+}
+
+.header-container img {
+
+}
