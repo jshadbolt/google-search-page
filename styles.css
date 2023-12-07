@@ -2,7 +2,6 @@
     box-sizing: border-box;
 }
 
-
 body {
     background-color: rgb(53, 54, 58);
     margin: 0;
@@ -15,7 +14,7 @@ body {
     font-size: 13px;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    /* align-items: center; */
     padding: 20px;
 }
 
@@ -42,8 +41,18 @@ ul {
     margin: 0;
 }
 
+li:hover,
+.apps:hover {
+    opacity: 0.5;
+}
+
 a {
     text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
     color: white;
 }
 
@@ -54,8 +63,21 @@ a {
     gap: 20px;
 }
 
+.apps:hover {
+    width: 110%;
+    height: 110%;
+}
+
+.filter {
+    filter: invert(100%);
+}
+
 .profile-image {
     border-radius: 50%;
+}
+
+.profile-image:hover {
+    opacity: 80%;
 }
 
 .content {
@@ -68,7 +90,7 @@ a {
     margin-bottom: 40px;
 }
 
-#doodle {
+.doodle {
     background-color: rgb(31, 31, 31);
     border-radius: 20px;
     display: flex;
@@ -77,6 +99,19 @@ a {
     width: 448px;
     height: 192px;
 }
+
+.doodle:hover {
+    background-color: rgba(12, 31, 31, 0.58);
+    transition: 0.3s ease-in;
+}
+
+.doodle:not(:hover) { 
+    background-color: rgb(31, 31, 31);
+    transition: 0.1s ease-in;
+ } 
+
+
+
 
 .search-bar-container {
     margin-bottom: 20px;
@@ -126,8 +161,6 @@ a {
     border-radius: 5px;
 }
 
-
-
 .add-button {
     background-color: #202124;
     border-radius: 50%;
@@ -142,6 +175,10 @@ a {
 .add-button > img {
     max-width: 100%;
     max-height: 100%;
+}
+
+.tile:hover img {
+    filter: invert(100%);
 }
 
 .add-shortcut-label {
@@ -183,6 +220,10 @@ a {
     max-height: 50%;
 }
 
+.header-container > .button-background > img:hover {
+    filter: invert(100%);
+}
+
 .header {
     margin-right: auto;
 }
@@ -209,4 +250,20 @@ a {
 
 .hoverable:hover {
     background-color: rgba(255, 255, 255, 0.116);
+}
+
+.drive-modal {
+    animation: fadeInAnimation ease-out 0.9s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+ 
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
 }
